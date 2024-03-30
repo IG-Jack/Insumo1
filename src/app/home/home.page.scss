@@ -1,27 +1,66 @@
-#container {
-  text-align: center;
+ion-content{
+  --ion-background-color: linear-gradient(to bottom, rgb(255, 187, 0),  rgb(245, 18, 11));
+border-radius: 50px!important;
+}
+ion-col{ 
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+}
+/* Cambiar el color de fondo de ion-button */
+ion-button {
+  --background: white;
+}
+.bathroom-red {
+  background-color: red;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.bathroom-green {
+  background-color: green;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.kitchen-red {
+  background-color: rgb(243, 10, 10);
 }
 
-#container a {
-  text-decoration: none;
+.kitchen-green {
+  background-color: green;
+}
+
+.chochera-red{
+  background-color: red;
+
+}
+.cochera-green{
+
+  background-color: green;
+
+}
+.dormi-red{
+  background-color: red;
+
+}
+.dormi-green{
+  background-color: green;
+
+
+}
+.gimnasio-red{
+  background-color: red;
+
+}
+.gimnasio-green{
+  background-color: green;
+
+}
+.salaJ-green{
+  background-color: green;
+
+
+}
+.salaJ-red{
+  background-color: red;
+
 }

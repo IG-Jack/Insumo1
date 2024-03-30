@@ -1,20 +1,79 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <div style="width: 100%; height: auto; text-align: center; display: flex; justify-content: center; align-items: center; background-color:black">
+    <p  style="font-family: 'Times New Roman', Times, serif;font-size: 24px;color: white;">Casa</p>
+</div>
+  <ion-grid>
+
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+        <div [ngClass]="{'bathroom-red': !estadoBano, 'bathroom-green': estadoBano}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>Baño</h3>
+        <ion-button class="style" >     <ion-icon name="grid-sharp" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div [ngClass]="{'kitchen-red': !estadoCocina, 'kitchen-green': estadoCocina}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>Cocina</h3>
+        <ion-button   >   <ion-icon name="restaurant-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+  
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+  
+        <div [ngClass]="{'dormi-red': !estadoDormitorio, 'dormi-green': estadoDormitorio}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+<h3>Habitacion</h3>
+<ion-button><ion-icon name="bed-outline" style="color:black;font-size: 30px;"></ion-icon></ion-button>
+
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        
+        <div [ngClass]="{'gimnasio-red': !estadoGimnasio, 'gimnasio-green': estadoGimnasio}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>Gimnasio</h3>
+
+        <ion-button>        <ion-icon name="barbell-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+
+    
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+  
+        <div [ngClass]="{'chochera-red': !estadoCochera, 'chochera-green': estadoCochera}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+      
+        <h3>Cochera</h3>
+        <ion-button>        <ion-icon name="car-sport-outline"  style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+            
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        <div [ngClass]="{'salaJ-red': !estadoSalaJuegos, 'salaJ-green': estadoSalaJuegos}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>Sala de Juegos</h3>
+        <ion-button>
+
+          <ion-icon name="desktop-outline"  style="color:black;font-size: 30px;"></ion-icon>
+
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+  </ion-grid>
 </ion-content>
